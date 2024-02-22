@@ -14,13 +14,6 @@ jobs:
     # Checkout du repository
     - name: Checkout du repository
       uses: actions/checkout@v2
-      
-    # Setup du PHP, des extensions et de Composer
-          
-    # Installation des dépendances de Composer
-    - name: Installation des dépendances de Composer
-      run: composer install
-      working-directory: ./
 
     # Build et run du Docker containers
     - name: Build et run du Docker containers
