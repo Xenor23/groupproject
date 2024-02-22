@@ -19,11 +19,11 @@ jobs:
     - name: Build et run du Docker containers
       run: |
         docker-compose up --build -d
-      working-directory: ./
+      working-directory: ./projet
 
     # Déploiement
     - name: Déploiement
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./
+        publish_dir: ./projet
